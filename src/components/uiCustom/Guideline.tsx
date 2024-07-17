@@ -82,7 +82,7 @@ const GuidelinesPage: React.FC<GuidelinesPageProps> = ({ selectedGender }) => {
           height="60px"
         />
       </div>
-      <div className="flex flex-col items-center justify-center w-full h-full py-8">
+      <div className="flex flex-col h-[80vh] items-center justify-center w-full  py-8">
         {showGuidelines && (
           <motion.div
             initial={{ height: 0, opacity: 0 }}
@@ -97,11 +97,11 @@ const GuidelinesPage: React.FC<GuidelinesPageProps> = ({ selectedGender }) => {
               className="flex flex-col items-center justify-center rounded-xl p-8"
             >
               <h1 className="text-2xl font-bold mb-4">
-                {selectedGender === "female" ? "Girls" : "Boys"}&apos Guidelines
+                {selectedGender === "female" ? "Girls" : "Boys"} Guidelines
               </h1>
               <div className="flex justify-between w-full">
                 <div className="w-1/2 pr-4">
-                  <h2 className="text-lg font-bold mb-2">Do&aposs</h2>
+                  <h2 className="text-lg font-bold mb-2">Dos</h2>
                   <ul className="list-none">
                     {currentGuide.dos.map((item, index) => (
                       <li key={index} className="mb-2 flex items-center">
@@ -112,7 +112,7 @@ const GuidelinesPage: React.FC<GuidelinesPageProps> = ({ selectedGender }) => {
                   </ul>
                 </div>
                 <div className="w-1/2 pl-4">
-                  <h2 className="text-lg font-bold mb-2">Don&aposts</h2>
+                  <h2 className="text-lg font-bold mb-2">Donts</h2>
                   <ul className="list-none">
                     {currentGuide.donts.map((item, index) => (
                       <li key={index} className="mb-2 flex items-center">

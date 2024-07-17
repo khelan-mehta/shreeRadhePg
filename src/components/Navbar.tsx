@@ -21,10 +21,10 @@ const navLinks = [
 ];
 
 const mobileLinks = [
-  { icon: "Home", text: "Home", href: "/#home" },
-  { icon: "Info", text: "Amenities", href: "/#amenities" },
-  { icon: "Hotel", text: "Location", href: "/#location" },
-  { icon: "Info", text: "About", href: "/#about" },
+  { icon: "Home", text: "Home", href: "/" },
+  { icon: "Info", text: "Amenities", href: "/" },
+  { icon: "Hotel", text: "Location", href: "/" },
+  { icon: "Info", text: "About", href: "/" },
   { icon: "Phone", text: "Contact", href: "/contact" },
 ];
 
@@ -130,7 +130,7 @@ const Navbar = () => {
                           onClick={() => {
                             setTimeout(() => {
                               setIsMenuOpen(false);
-                            }, 300);
+                            }, 3000);
                           }}
                         >
                           <Icon size={40} /> {item.text}

@@ -99,11 +99,11 @@ const GuidelinesPagePhone: React.FC<GuidelinesPageProps> = ({
               className="flex flex-col items-center rounded-xl p-2"
             >
               <h1 className="text-xl font-bold mb-2">
-                {selectedGender === "female" ? "Girls" : "Boys"}&apos Guidelines
+                {selectedGender === "female" ? "Girls" : "Boys"} Guidelines
               </h1>
               <div className="flex flex-col sm:flex-row justify-between w-full">
                 <div className="w-full sm:w-1/2 sm:pr-2 mb-2 sm:mb-0">
-                  <h2 className="text-base font-bold mb-1">D&aposos</h2>
+                  <h2 className="text-base font-bold mb-1">Dos</h2>
                   <ul className="list-none text-sm">
                     {currentGuide.dos.map((item, index) => (
                       <li key={index} className="mb-1 flex items-center">
@@ -114,7 +114,7 @@ const GuidelinesPagePhone: React.FC<GuidelinesPageProps> = ({
                   </ul>
                 </div>
                 <div className="w-full sm:w-1/2 sm:pl-2">
-                  <h2 className="text-base font-bold mb-1">Don&aposts</h2>
+                  <h2 className="text-base font-bold mb-1">Donts</h2>
                   <ul className="list-none text-sm">
                     {currentGuide.donts.map((item, index) => (
                       <li key={index} className="mb-1 flex items-center">
