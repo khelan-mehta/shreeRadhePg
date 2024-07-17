@@ -149,7 +149,7 @@ const Contact: React.FC = () => (
     </TabView>
     <DesktopView>
       <div className="px-12 w-screen mt-[80px]">
-        <div className="header flex flex-col flex-shrink-0 shadow-2xl  h-[70vh] bg-primary rounded-[15px] py-6 justify-center">
+        <div className="header flex flex-col flex-shrink-0 shadow-2xl  h-[80vh] bg-primary rounded-[15px] py-6 justify-center">
           <div className="flex justify-between mr-[48px] mt-[0px]">
             <div className="flex flex-col ml-[48px]">
               <div className="title___description flex flex-col flex-shrink-0 items-start w-[15.3125rem] h-[5.5rem]">
