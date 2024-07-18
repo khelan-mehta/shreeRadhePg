@@ -28,7 +28,7 @@ const AboutPage: React.FC<AboutPageProps> = () => {
   return (
     <>
       <MobileView>
-        <div className="flex flex-col w-screen items-center justify-around gap-10 relative px-3 mt-[-70px]">
+        <div className="flex flex-col w-screen items-center justify-around gap-10 relative px-3 mt-[-70px] ">
           <div className="flex items-center justify-center relative h-[155px]">
             <video
               id="about-video"

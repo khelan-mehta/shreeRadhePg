@@ -13,14 +13,19 @@ import Reviews from "@/components/Reviews";
 
 const Pages: React.FC = () => {
   return (
-    <div>
-      <Hero />
-
-      <AboutPage />
-
-      <Facilities />
-
-      <Accommodation />
+    <div className="w-screen overflow-x-hidden">
+      <section id="home">
+        <Hero />
+      </section>
+      <section id="about">
+        <AboutPage />
+      </section>
+      <section id="amenities">
+        <Facilities />
+      </section>
+      <section id="rooms">
+        <Accommodation />
+      </section>
 
       <Contact />
       <Reviews />
