@@ -64,16 +64,6 @@ const Contact: React.FC = () => (
               </div>
             </div>
           </div>
-          <div className="map-container flex justify-center mx-4 mt-6 md:mt-0">
-            <iframe
-              className="w-full md:w-auto h-[300px]"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.292856649765!2d-122.41941508468168!3d37.774929279758606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c79e8f67f%3A0x3b8a0a4d096b2d84!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1597698233580!5m2!1sen!2sus"
-              allowFullScreen
-              aria-hidden="false"
-              tabIndex={0}
-              style={{ border: 0 }}
-            />
-          </div>
         </div>
       </div>
     </MobileView>
@@ -149,7 +139,7 @@ const Contact: React.FC = () => (
     </TabView>
     <DesktopView>
       <div className="px-12 w-screen mt-[80px]">
-        <div className="header flex flex-col flex-shrink-0 shadow-2xl  h-[80vh] bg-primary rounded-[15px] py-6 justify-center">
+        <div className="header flex flex-col flex-shrink-0 shadow-2xl  h-[50vh] bg-primary rounded-[15px] py-6 justify-center">
           <div className="flex justify-between mr-[48px] mt-[0px]">
             <div className="flex flex-col ml-[48px]">
               <div className="title___description flex flex-col flex-shrink-0 items-start w-[15.3125rem] h-[5.5rem]">
@@ -203,16 +193,6 @@ const Contact: React.FC = () => (
                 </div>
               </div>
             </div>
-          </div>
-          <div className="map-container flex justify-center ml-[48px] mr-[48px]">
-            <iframe
-              className="w-full h-[300px]"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.292856649765!2d-122.41941508468168!3d37.774929279758606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c79e8f67f%3A0x3b8a0a4d096b2d84!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1597698233580!5m2!1sen!2sus"
-              allowFullScreen
-              aria-hidden="false"
-              tabIndex={0}
-              style={{ border: 0 }}
-            />
           </div>
         </div>
       </div>

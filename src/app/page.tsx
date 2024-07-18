@@ -14,20 +14,13 @@ import Reviews from "@/components/Reviews";
 const Pages: React.FC = () => {
   return (
     <div>
-      <section id="home">
-        <Hero />
-      </section>
-      <section id="about">
-        <AboutPage />
-      </section>
-      <section id="amenities">
-        <Facilities />
-      </section>
-      <section id="rooms">
-        <Accommodation />
-      </section>
+      <Hero />
 
-      {/* <AboutUs /> */}
+      <AboutPage />
+
+      <Facilities />
+
+      <Accommodation />
 
       <Contact />
       <Reviews />

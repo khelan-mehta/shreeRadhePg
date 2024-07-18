@@ -36,7 +36,7 @@ const AboutPage: React.FC<AboutPageProps> = () => {
               src="https://www.w3schools.com/html/mov_bbb.mp4"
             />
             <button
-              className="absolute bottom-0 right-0 flex justify-center items-center rounded-lg ml-[-75px] w-[48px] h-[35px] bg-primary z-10"
+              className="absolute bottom-0 right-0 flex justify-center items-center rounded-lg ml-[-75px] w-[48px] h-[35px] bg-primary z-[1]"
               onClick={handleTogglePlay}
             >
               {isPlaying ? (
