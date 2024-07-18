@@ -26,8 +26,9 @@ const Pages: React.FC = () => {
       <section id="rooms">
         <Accommodation />
       </section>
-
-      <Contact />
+      <section id="location">
+        <Contact />
+      </section>
       <Reviews />
       <Footer />
     </div>
