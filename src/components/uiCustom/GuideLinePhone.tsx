@@ -81,10 +81,10 @@ const GuidelinesPagePhone: React.FC<GuidelinesPageProps> = ({
           text={`Guidelines`}
           onClick={() => setShowGuidelines(!showGuidelines)}
           width="150px"
-          height="50px"
+          height="50px" 
         />
       </div>
-      <div className="flex flex-col items-center w-full h-full py-4">
+      <div className="flex flex-col items-center w-full h-[80vh] py-4">
         {showGuidelines && (
           <motion.div
             initial={{ height: 0, opacity: 0 }}
