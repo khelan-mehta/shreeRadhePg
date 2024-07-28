@@ -14,9 +14,9 @@ const iconMap: any = {
 };
 
 const navLinks = [
-  { href: "/#home", text: "Home" },
+  { href: "/", text: "Home" },
   { href: "/amenities", text: "Amenities" },
-  { href: "/#location", text: "Location" },
+  { href: "/location", text: "Location" },
   { href: "/about", text: "About" },
   { href: "/contact", text: "Contact" },
 ];
@@ -24,7 +24,7 @@ const navLinks = [
 const mobileLinks = [
   { icon: "Home", text: "Home", href: "/#home" },
   { icon: "Info", text: "Amenities", href: "/amenities" },
-  { icon: "Hotel", text: "Location", href: "/#location" },
+  { icon: "Hotel", text: "Location", href: "/location" },
   { icon: "Info", text: "About", href: "/about" },
   { icon: "Phone", text: "Contact", href: "/contact" },
 ];
@@ -32,9 +32,9 @@ const mobileLinks = [
 const mobileLinks2 = [
   { icon: "Home", text: "Home", href: "/" },
   { icon: "Info", text: "Amenities", href: "/amenities" },
-  { icon: "Hotel", text: "Location", href: "/" },
+  { icon: "Hotel", text: "Location", href: "/location" },
   { icon: "Info", text: "About", href: "/about" },
-  { icon: "Phone", text: "Contact", href: "/" },
+  { icon: "Phone", text: "Contact", href: "/contact" },
 ];
 
 const staggerContainer = {
@@ -81,8 +81,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed top-0 bg-background z-10 sm:px-0 w-screen">
-      <div className="flex flex-col w-screen pt-8 pb-3 px-6 sm:px-0 overflow-hidden z-[2]">
+    <div className="fixed top-0 bg-opacity-90  bg-[#ECEAE5] z-10 sm:px-0 w-screen">
+      <div className="flex flex-col w-screen pt-4 pb-3 px-6 sm:px-0 overflow-hidden z-[2]">
         <div className="flex justify-between items-center px-3 sm:px-12">
           <div className="flex text-[26px] gap-4 text-primary sm:text-[42px] font-extrabold roboto-slab self-center">
             <span className="text-black">SHREE</span> RADHE
@@ -108,7 +108,7 @@ const Navbar = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="flex flex-col items-center gap-12 absolute top-24 left-0 text-[40px] font-semibold w-screen z-[1] p-12 bg-[#ECEAE5] mt-2 h-screen text-pretty italic"
+            className="flex flex-col items-center gap-12 absolute top-24 left-0 text-[40px] font-semibold w-screen z-[1] p-12 bg-[#ECEAE5]/70 mt-2 h-screen text-pretty italic"
           >
             <motion.div
               variants={staggerContainer}
@@ -148,7 +148,6 @@ const Navbar = () => {
             </motion.div>
           </motion.div>
         )}
-        <hr className="w-[70%] self-center mt-5" />
       </div>
     </div>
   );
