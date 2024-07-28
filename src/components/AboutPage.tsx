@@ -103,15 +103,15 @@ const AboutPage: React.FC<AboutPageProps> = () => {
             </div>
             <p className="text-[#04536c] text-[16px] mb-4">
               At Shree Radhe PG, we understand student life. Founded by Rahul
-              Tomar, with over 15 years of experience in the PG industry, we've
-              seen firsthand the challenges students face. That's why we've
-              created more than just accommodation – we've built a home away
-              from home. Our mission is simple: provide the best food, luxurious
-              living, and a positive environment where students can thrive. We
-              believe that comfortable living and a supportive atmosphere are
-              key to helping you make the most of your college years. Choose
-              Shree Radhe PG and enjoy your studies while we take care of the
-              rest.
+              Tomar, with over 15 years of experience in the PG industry,
+              we&apos;ve seen firsthand the challenges students face.
+              That&apos;s why we&apos;ve created more than just accommodation –
+              we&apos;ve built a home away from home. Our mission is simple:
+              provide the best food, luxurious living, and a positive
+              environment where students can thrive. We believe that comfortable
+              living and a supportive atmosphere are key to helping you make the
+              most of your college years. Choose Shree Radhe PG and enjoy your
+              studies while we take care of the rest.
             </p>
             <div className="py-3 px-8 rounded-2xl bg-primary text-white font-Mulish text-[.8125rem] leading-normal uppercase mb-4">
               Read more
@@ -122,55 +122,76 @@ const AboutPage: React.FC<AboutPageProps> = () => {
       <TabView>
         <motion.div
           className="flex w-screen items-center justify-around gap-10 relative mb-[100px]"
-          variants={containerVariants}
+          ref={ref}
           initial="hidden"
-          animate="visible"
+          animate={controls}
+          variants={containerVariants}
         >
           <div className="flex items-center justify-center relative h-[455px]">
-            <video
+            <motion.video
               id="about-video"
               className="h-[455px] z-[0] rounded-lg"
               src="https://www.w3schools.com/html/mov_bbb.mp4"
+              initial="hidden"
+              animate="visible"
+              variants={videoVariants}
             />
-            <button
+            <motion.button
               className="absolute bottom-0 right-0 flex justify-center items-center rounded-lg ml-[-75px] w-[88px] h-[65px] bg-primary z-10"
               onClick={handleTogglePlay}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
             >
               {isPlaying ? (
                 <PauseCircle className="self-center text-[24px] z-20" />
               ) : (
                 <PlayCircle className="self-center text-[24px] z-20" />
               )}
-            </button>
+            </motion.button>
           </div>
           <motion.div
-            className="flex flex-col items-center justify-center text-center"
-            variants={containerVariants}
+            className="flex flex-col items-center justify-center text-justify"
             initial="hidden"
             animate="visible"
-            transition={{ delay: 0.5 }}
+            variants={textVariants}
           >
             <div className="text-primary text-[30px] font-black leading-normal capitalize mb-4">
               Our Story
             </div>
-            <p className="text-[#04536c] text-[16px] mb-4">
+            <p className="text-[#04536c] text-[16px] mb-4 w-[600px]">
               At Shree Radhe PG, we understand student life. Founded by Rahul
-              Tomar, with over 15 years of experience in the PG industry, we've
-              seen firsthand the challenges students face. That's why we've
-              created more than just accommodation – we've built a home away
-              from home. Our mission is simple: provide the best food, luxurious
-              living, and a positive environment where students can thrive. We
-              believe that comfortable living and a supportive atmosphere are
-              key to helping you make the most of your college years. Choose
-              Shree Radhe PG and enjoy your studies while we take care of the
-              rest.
+              Tomar, with over 15 years of experience in the PG industry,
+              we&apos;ve seen firsthand the challenges students face.
+              That&apos;s why we&apos;ve created more than just accommodation –
+              we&apos;ve built a home away from home. Our mission is simple:
+              provide the best food, luxurious living, and a positive
+              environment where students can thrive. We believe that comfortable
+              living and a supportive atmosphere are key to helping you make the
+              most of your college years. Choose Shree Radhe PG and enjoy your
+              studies while we take care of the rest.
+              {!showFullText && <span> ...</span>}
+              {showFullText && (
+                <span>
+                  {" "}
+                  We believe that comfortable living and a supportive atmosphere
+                  are key to helping you make the most of your college years.
+                  Choose Shree Radhe PG and enjoy your studies while we take
+                  care of the rest. Our mission is simple: provide the best
+                  food, luxurious living, and a positive environment where
+                  students can thrive. We believe that comfortable living and a
+                  supportive atmosphere are key to helping you make the most of
+                  your college years. Choose Shree Radhe PG and enjoy your
+                  studies while we take care of the rest.
+                </span>
+              )}
             </p>
             <IconButton
-              icon={BookCopy}
-              text="ReadMore"
+              icon={showFullText ? ChevronUp : ChevronDown}
+              text={showFullText ? "Show Less" : "Read More"}
               variant="primary"
-              width="150px"
+              width="180px"
               height="50px"
+              onClick={toggleText}
             />
           </motion.div>
         </motion.div>
@@ -216,15 +237,15 @@ const AboutPage: React.FC<AboutPageProps> = () => {
             </div>
             <p className="text-[#04536c] text-[16px] mb-4 w-[600px]">
               At Shree Radhe PG, we understand student life. Founded by Rahul
-              Tomar, with over 15 years of experience in the PG industry, we've
-              seen firsthand the challenges students face. That's why we've
-              created more than just accommodation – we've built a home away
-              from home. Our mission is simple: provide the best food, luxurious
-              living, and a positive environment where students can thrive. We
-              believe that comfortable living and a supportive atmosphere are
-              key to helping you make the most of your college years. Choose
-              Shree Radhe PG and enjoy your studies while we take care of the
-              rest.
+              Tomar, with over 15 years of experience in the PG industry,
+              we&apos;ve seen firsthand the challenges students face.
+              That&apos;s why we&apos;ve created more than just accommodation –
+              we&apos;ve built a home away from home. Our mission is simple:
+              provide the best food, luxurious living, and a positive
+              environment where students can thrive. We believe that comfortable
+              living and a supportive atmosphere are key to helping you make the
+              most of your college years. Choose Shree Radhe PG and enjoy your
+              studies while we take care of the rest.
               {!showFullText && <span> ...</span>}
               {showFullText && (
                 <span>
