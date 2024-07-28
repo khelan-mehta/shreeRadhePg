@@ -7,19 +7,18 @@ import {
   PauseCircle,
   PlayCircle,
 } from "lucide-react";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import DesktopView from "./views/desktopView";
-import MobileView from "./views/mobileView";
-import IconButton from "./uiCustom/IconButton";
-import TabView from "./views/tabView";
+import { motion } from "framer-motion";
+import DesktopView from "../views/desktopView";
+import MobileView from "../views/mobileView";
+import IconButton from "../uiCustom/IconButton";
+import TabView from "../views/tabView";
+import Footer from "../Footer";
 
 interface AboutPageProps {}
 
 const AboutPage: React.FC<AboutPageProps> = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [showFullText, setShowFullText] = useState(false);
-
   const handleTogglePlay = () => {
     const video = document.getElementById("about-video") as HTMLVideoElement;
     if (video) {
@@ -37,19 +36,6 @@ const AboutPage: React.FC<AboutPageProps> = () => {
     setShowFullText(!showFullText);
   };
 
-  // Animation setup
-  const controls = useAnimation();
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.3,
-  });
-
-  React.useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    }
-  }, [controls, inView]);
-
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -66,7 +52,7 @@ const AboutPage: React.FC<AboutPageProps> = () => {
   };
 
   return (
-    <>
+    <div className="flex flex-col">
       <MobileView>
         <motion.div
           className="flex flex-col w-screen items-center justify-around gap-10 relative px-3 mt-[-70px]"
@@ -176,13 +162,7 @@ const AboutPage: React.FC<AboutPageProps> = () => {
         </motion.div>
       </TabView>
       <DesktopView>
-        <motion.div
-          className="flex w-screen items-center justify-around gap-10 relative mb-[100px]"
-          ref={ref}
-          initial="hidden"
-          animate={controls}
-          variants={containerVariants}
-        >
+        <div className="flex w-screen items-center justify-around gap-10 relative mb-[100px]">
           <div className="flex items-center justify-center relative h-[455px]">
             <motion.video
               id="about-video"
@@ -250,9 +230,10 @@ const AboutPage: React.FC<AboutPageProps> = () => {
               onClick={toggleText}
             />
           </motion.div>
-        </motion.div>
+        </div>
       </DesktopView>
-    </>
+      <Footer />
+    </div>
   );
 };
 

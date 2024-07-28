@@ -278,61 +278,46 @@ const Facilities: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[50px] h-[50px]">
-              <button
-                onClick={handleShowMore}
-                className="flex items-center justify-center w-full h-full border-2 border-[rgba(255,116,51,0.68)] rounded-[5px]"
-              >
-                <img
-                  src="https://img.icons8.com/?size=100&id=99992&format=png&color=FF7433"
-                  alt="Plus Icon"
-                  width={30}
-                  height={30}
-                />
-              </button>
-            </div>
           </div>
-          {showMore && (
-            <div className="flex items-center gap-20 mt-4 ">
-              <div className=" h-[5.75rem] mr-[40px]">
-                <div className="flex items-center justify-center w-full h-full">
-                  <img
-                    src="https://img.icons8.com/?size=100&id=11222&format=png&color=FF7433"
-                    alt="Library Icon"
-                    width={50}
-                    height={50}
-                  />
-                  <div className="flex flex-col ml-[10px]">
-                    <div className="text-primary  text-[1.0625rem] font-black  capitalize">
-                      Library
-                    </div>
-                    <div className=" text-secondary  text-[.9375rem] ">
-                      Ut enim ad minim veniam
-                    </div>
+          <div className="flex items-center gap-20 mt-4 ">
+            <div className=" h-[5.75rem] mr-[40px]">
+              <div className="flex items-center justify-center w-full h-full">
+                <img
+                  src="https://img.icons8.com/?size=100&id=11222&format=png&color=FF7433"
+                  alt="Library Icon"
+                  width={50}
+                  height={50}
+                />
+                <div className="flex flex-col ml-[10px]">
+                  <div className="text-primary  text-[1.0625rem] font-black  capitalize">
+                    Library
+                  </div>
+                  <div className=" text-secondary  text-[.9375rem] ">
+                    Ut enim ad minim veniam
                   </div>
                 </div>
               </div>
-              <div className=" h-[5.75rem] mr-[40px]">
-                <div className="flex items-center justify-center w-full h-full">
-                  <img
-                    src="https://img.icons8.com/?size=100&id=FVQ3xoP9VcTG&format=png&color=FF7433"
-                    alt="Cafeteria Icon"
-                    width={50}
-                    height={50}
-                  />
-                  <div className="flex flex-col ml-[10px]">
-                    <div className="text-primary  text-[1.0625rem] font-black  capitalize">
-                      Cafeteria
-                    </div>
-                    <div className=" text-secondary  text-[.9375rem] ">
-                      Quis nostrud exercitation
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Add more facilities as needed */}
             </div>
-          )}
+            <div className=" h-[5.75rem] mr-[40px]">
+              <div className="flex items-center justify-center w-full h-full">
+                <img
+                  src="https://img.icons8.com/?size=100&id=FVQ3xoP9VcTG&format=png&color=FF7433"
+                  alt="Cafeteria Icon"
+                  width={50}
+                  height={50}
+                />
+                <div className="flex flex-col ml-[10px]">
+                  <div className="text-primary  text-[1.0625rem] font-black  capitalize">
+                    Cafeteria
+                  </div>
+                  <div className=" text-secondary  text-[.9375rem] ">
+                    Quis nostrud exercitation
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Add more facilities as needed */}
+          </div>
         </div>
       </DesktopView>
     </>

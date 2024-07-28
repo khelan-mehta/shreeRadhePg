@@ -15,25 +15,25 @@ const iconMap: any = {
 
 const navLinks = [
   { href: "/#home", text: "Home" },
-  { href: "/#amenities", text: "Amenities" },
+  { href: "/amenities", text: "Amenities" },
   { href: "/#location", text: "Location" },
-  { href: "/#about", text: "About" },
+  { href: "/about", text: "About" },
   { href: "/contact", text: "Contact" },
 ];
 
 const mobileLinks = [
   { icon: "Home", text: "Home", href: "/#home" },
-  { icon: "Info", text: "Amenities", href: "/#amenities" },
+  { icon: "Info", text: "Amenities", href: "/amenities" },
   { icon: "Hotel", text: "Location", href: "/#location" },
-  { icon: "Info", text: "About", href: "/#about" },
+  { icon: "Info", text: "About", href: "/about" },
   { icon: "Phone", text: "Contact", href: "/contact" },
 ];
 
 const mobileLinks2 = [
   { icon: "Home", text: "Home", href: "/" },
-  { icon: "Info", text: "Amenities", href: "/" },
+  { icon: "Info", text: "Amenities", href: "/amenities" },
   { icon: "Hotel", text: "Location", href: "/" },
-  { icon: "Info", text: "About", href: "/" },
+  { icon: "Info", text: "About", href: "/about" },
   { icon: "Phone", text: "Contact", href: "/" },
 ];
 
@@ -71,7 +71,7 @@ const Navbar = () => {
 
   const handleLinkClick = (target: string) => {
     const element = document.getElementById(target);
-    const yOffset = -80; // Adjust this value as needed
+    const yOffset = -100; // Adjust this value as needed
     const y = element
       ? element.getBoundingClientRect().top + window.pageYOffset + yOffset
       : 0;
@@ -84,8 +84,8 @@ const Navbar = () => {
     <div className="fixed top-0 bg-background z-10 sm:px-0 w-screen">
       <div className="flex flex-col w-screen pt-8 pb-3 px-6 sm:px-0 overflow-hidden z-[2]">
         <div className="flex justify-between items-center px-3 sm:px-12">
-          <div className="flex text-[26px] text-primary sm:text-[42px] font-extrabold roboto-slab self-center">
-            SHREE RADHE
+          <div className="flex text-[26px] gap-4 text-primary sm:text-[42px] font-extrabold roboto-slab self-center">
+            <span className="text-black">SHREE</span> RADHE
           </div>
           <div className="hidden text-secondary roboto-slab md:flex gap-8 uppercase items-center font-semibold text-[18px]">
             {navLinks.map((link, index) => (

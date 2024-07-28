@@ -130,13 +130,13 @@ const Footer: React.FC<FooterProps> = () => {
               <h5 className="text-xl font-bold text-white">Quick Links</h5>
               <ul className="mt-2 space-y-2 text-white">
                 <li>
-                  <a href="#" className="hover:text-white">
-                    Accommodations
+                  <a href="/" className="hover:text-white">
+                    Home
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-white">
-                    Facilities
+                    Amenities
                   </a>
                 </li>
                 <li>
@@ -150,7 +150,7 @@ const Footer: React.FC<FooterProps> = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a href="/about" className="hover:text-white">
                     About Us
                   </a>
                 </li>
@@ -198,8 +198,8 @@ const Footer: React.FC<FooterProps> = () => {
               <h5 className="text-xl font-bold text-white">Quick Links</h5>
               <ul className="mt-2 space-y-2 text-white">
                 <li>
-                  <a href="#" className="hover:text-white">
-                    Accommodations
+                  <a href="/" className="hover:text-white">
+                    Home
                   </a>
                 </li>
                 <li>
@@ -218,7 +218,7 @@ const Footer: React.FC<FooterProps> = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a href="/about" className="hover:text-white">
                     About Us
                   </a>
                 </li>
