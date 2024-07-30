@@ -98,9 +98,8 @@ const GuidelinesPage: React.FC<GuidelinesPageProps> = ({ selectedGender }) => {
                   <h2 className="text-lg font-bold mb-2">Dos</h2>
                   <ul className="list-none">
                     {currentGuide.dos.map((item, index) => (
-                      <li key={index} className="mb-2 flex items-center">
-                        <FaCheckCircle className="text-green-500 mr-2" />
-                        {item}
+                      <li key={index} className="mb-2 gap-2 flex items-center">
+                        <span className="text-primary">✔</span> {item}
                       </li>
                     ))}
                   </ul>
