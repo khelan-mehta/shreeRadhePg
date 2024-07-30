@@ -76,7 +76,7 @@ const GuidelinesPage: React.FC<GuidelinesPageProps> = ({ selectedGender }) => {
           height="60px"
         />
       </div>
-      <div className="flex flex-col h-[80vh] items-center justify-center w-full  py-8">
+      <div className="flex flex-col h-[90vh] items-center justify-center w-full  py-8">
         {showGuidelines && (
           <motion.div
             initial={{ height: 0, opacity: 0 }}

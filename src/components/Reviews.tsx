@@ -82,8 +82,8 @@ const Reviews: React.FC = () => {
   return (
     <>
       <MobileView>
-        <div className="flex flex-col w-screen mt-24 justify-between gap-4">
-          <div className="text-[#ff7433] text-center mb-4 font-mulish text-3xl font-extrabold capitalize">
+        <div className="flex  flex-col w-screen mt-72 justify-between gap-4">
+          <div className="text-[#ff7433] text-center mb-4 font-mulish text-2xl font-extrabold capitalize px-8">
             What students say about us ?
           </div>
           <div className="flex flex-col justify-center items-center gap-12 mt-8">
@@ -108,12 +108,12 @@ const Reviews: React.FC = () => {
                 exit="exit"
                 variants={reviewVariants}
               >
-                <div className="text-secondary min-h-[300px] max-h-[300px] min-w-[300px] max-w-[300px] text-justify text-lg leading-[1.1875rem]">
+                <div className="min-h-[300px] max-h-[300px] min-w-[300px] max-w-[300px] text-justify text-lg text-black leading-[1.1875rem]">
                   {currentReview.text}
                 </div>
                 <div className="flex items-center justify-between">
                   <div className="flex flex-col items-start gap-2">
-                    <div className="text-[#04536c] font-livvic text-2xl font-medium leading-7">
+                    <div className="text-black  font-livvic text-2xl font-medium leading-7">
                       {currentReview.name}
                     </div>
                     <div className="text-[#04536c] text-base leading-[1.3125rem]">
