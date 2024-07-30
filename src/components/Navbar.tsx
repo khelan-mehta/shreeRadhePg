@@ -81,20 +81,20 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed top-0 bg-opacity-90  bg-[#ECEAE5] z-10 sm:px-0 w-screen">
+    <div className="fixed top-0 bg-opacity-100 sm:bg-opacity-90  bg-[#ECEAE5] z-10 sm:px-0 w-screen">
       <div className="flex flex-col w-screen pt-4 pb-3 px-6 sm:px-0 overflow-hidden z-[2]">
         <div className="flex justify-between items-center px-3 sm:px-12">
           <div className="flex text-[26px] gap-4 text-primary sm:text-[42px] font-extrabold roboto-slab self-center">
             <span className="text-black">SHREE</span> RADHE
           </div>
-          <div className="hidden text-secondary roboto-slab md:flex gap-8 uppercase items-center font-semibold text-[18px]">
+          <div className="hidden text-secondary  roboto-slab md:flex gap-8 uppercase items-center font-semibold text-[18px]">
             {navLinks.map((link, index) => (
               <NavLink
                 key={index}
                 href={link.href}
                 text={link.text}
                 onClick={() => handleLinkClick(link.href.split("#")[1])}
-              />
+              /> 
             ))}
           </div>
           <div className="md:hidden">

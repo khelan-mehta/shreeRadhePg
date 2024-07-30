@@ -23,7 +23,7 @@ export const FeatureDt: React.FC<FeatureProps> = ({
 }) => (
   <motion.div
     className={`relative h-[5.75rem] `}
-    style={{ marginLeft: `${(4 - Number(index)) * 60}px` }}
+    style={{ marginLeft: `80px` }}
     whileHover={{ scale: 1.1 }}
   >
     <div className="flex items-center justify-center gap-5 h-full  p-2">

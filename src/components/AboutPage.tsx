@@ -81,7 +81,7 @@ const AboutPage: React.FC<AboutPageProps> = () => {
               src="https://www.w3schools.com/html/mov_bbb.mp4"
             />
             <button
-              className="absolute bottom-0 right-0 flex justify-center items-center rounded-lg ml-[-75px] w-[48px] h-[35px] bg-primary z-[1]"
+              className="absolute bottom-0 right-0 flex justify-center items-center rounded-lg ml-[-75px] w-[48px] h-[35px] bg-primary z-[0]"
               onClick={handleTogglePlay}
             >
               {isPlaying ? (
@@ -214,15 +214,15 @@ const AboutPage: React.FC<AboutPageProps> = () => {
               variants={videoVariants}
             />
             <motion.button
-              className="absolute bottom-0 right-0 flex justify-center items-center rounded-lg ml-[-75px] w-[88px] h-[65px] bg-primary z-10"
+              className="absolute bottom-0 right-0 flex justify-center items-center rounded-lg ml-[-75px] w-[88px] h-[65px] bg-primary z-0"
               onClick={handleTogglePlay}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
               {isPlaying ? (
-                <PauseCircle className="self-center text-[24px] z-20" />
+                <PauseCircle className="self-center text-[24px] z-[-1]" />
               ) : (
-                <PlayCircle className="self-center text-[24px] z-20" />
+                <PlayCircle className="self-center text-[24px] z-[-1]" />
               )}
             </motion.button>
           </div>

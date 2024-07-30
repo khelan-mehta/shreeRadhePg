@@ -84,7 +84,7 @@ const Reviews: React.FC = () => {
       <MobileView>
         <div className="flex flex-col w-screen mt-24 justify-between gap-4">
           <div className="text-[#ff7433] text-center mb-4 font-mulish text-3xl font-extrabold capitalize">
-            What people say about us?
+            What students say about us ?
           </div>
           <div className="flex flex-col justify-center items-center gap-12 mt-8">
             <AnimatePresence mode="wait">
@@ -149,7 +149,7 @@ const Reviews: React.FC = () => {
       <TabView>
         <div className="flex flex-col w-screen mt-24 justify-between gap-4">
           <div className="text-[#ff7433] text-center mb-4 font-mulish text-3xl font-extrabold capitalize">
-            What people say about us?
+            What students say about us ?
           </div>
           <div className="flex justify-center items-center gap-32 mt-8">
             <AnimatePresence mode="wait">
@@ -214,7 +214,7 @@ const Reviews: React.FC = () => {
       <DesktopView>
         <div className="flex flex-col w-screen mt-24  gap-8">
           <div className="text-[#ff7433] text-center mb-4 font-mulish text-4xl font-extrabold capitalize">
-            What people say about us?
+            What students say about us ?
           </div>
           <div className="flex justify-center  gap-32 mt-8 px-24">
             <AnimatePresence mode="wait">

@@ -203,18 +203,18 @@ const Footer: React.FC<FooterProps> = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a href="/amenities" className="hover:text-white">
                     Facilities
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
-                    Pricing
+                  <a href="/contact" className="hover:text-white">
+                    Contact Us
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
-                    Reviews
+                  <a href="/location" className="hover:text-white">
+                    Location
                   </a>
                 </li>
                 <li>

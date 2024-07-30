@@ -2,11 +2,13 @@
 import React, { useEffect, useState } from "react";
 
 import {
+  Axe,
   Dessert,
   Dumbbell,
   Library,
   ParkingCircle,
   ParkingCircleIcon,
+  Shirt,
   Wifi,
 } from "lucide-react";
 import MobileView from "@/components/views/mobileView";
@@ -48,6 +50,16 @@ const features: Feature[] = [
     title: "Cafeteria",
     description: "Amet minim mollit non",
   },
+  {
+    icon: Axe,
+    title: "Miscellaneous",
+    description: "Amet minim mollit non",
+  },
+  {
+    icon: Shirt,
+    title: "Laundry Services",
+    description: "Amet minim mollit non",
+  },
 ];
 
 const Facilities: React.FC = () => {
@@ -63,6 +75,8 @@ const Facilities: React.FC = () => {
     "https://housing.com/news/wp-content/uploads/2022/11/GYM-INTERIORS-FEATURE-compressed.jpg",
     "https://media.istockphoto.com/id/1498878143/photo/book-stack-and-open-book-on-the-desk-in-modern-public-library.webp?b=1&s=170667a&w=0&k=20&c=T63zJBKuZLTUQwwAAwLzbMwtzAEdd4wZRaEV6EAdUnA=",
     "https://3.files.edl.io/1ed0/18/10/24/140236-4602de79-383e-4afb-94f6-678a95125f25.jpg",
+    "https://goldcoastplumbingcompany.com.au/wp-content/uploads/2021/03/plumbing-service-types.jpg",
+    "https://media.cnn.com/api/v1/images/stellar/prod/210915133905-how-to-do-laundry-lead.jpg?q=x_0,y_0,h_900,w_1601,c_fill",
   ];
   const [hoveredFeatureIndex, setHoveredFeatureIndex] = useState<any>(0);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -253,8 +267,8 @@ const Facilities: React.FC = () => {
       </TabView>
       <DesktopView>
         {" "}
-        <div className="flex flex-col items-start gap-2 mt-12 mb-[100px]">
-          <div className="flex flex-col items-center justify-center text-[30px] gap-6">
+        <div className="flex flex-col items-start gap-2 mt-3 mb-[100px]">
+          <div className=" text-[30px] gap-2">
             {features.map((feature, index) => {
               const marginLeft = `ml-${index * 80}px`; // Calculate margin-left
 
@@ -263,17 +277,19 @@ const Facilities: React.FC = () => {
                   key={index}
                   onMouseEnter={() => setHoveredFeatureIndex(index)}
                 >
-                  <FeatureDt
-                    key={index}
-                    index={index}
-                    titleSize="text-[28px]"
-                    descriptionSize="text-[22px]"
-                    icon={feature.icon}
-                    iconSize="text-[40px]"
-                    title={feature.title}
-                    description={feature.description}
-                    marginLeft={marginLeft}
-                  />
+                  <div className="grid grid-cols-2 gap-8 relative">
+                    <FeatureDt
+                      key={index}
+                      index={index}
+                      titleSize="text-[24px]"
+                      descriptionSize="text-[20px]"
+                      icon={feature.icon}
+                      iconSize="text-[32px]"
+                      title={feature.title}
+                      description={feature.description}
+                      marginLeft={marginLeft}
+                    />
+                  </div>
                   <AnimatePresence>
                     {hoveredFeatureIndex === index && (
                       <motion.div
@@ -282,12 +298,12 @@ const Facilities: React.FC = () => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 50 }}
                         transition={{ duration: 0.3 }}
-                        className="absolute right-[240px] top-[230px]"
+                        className="absolute right-[210px] top-[190px]"
                       >
                         <img
                           src={images[hoveredFeatureIndex]}
                           alt={`Feature ${index}`}
-                          className="w-[600px] bg-contain h-[430px] rounded-2xl shadow-[0_20px_50px_rgba(255,_116,_51,_0.7)]"
+                          className="w-[700px] bg-contain h-[530px] rounded-2xl shadow-[0_20px_50px_rgba(255,_116,_51,_0.7)]"
                         />
                       </motion.div>
                     )}
