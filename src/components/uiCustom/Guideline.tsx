@@ -82,7 +82,7 @@ const GuidelinesPage: React.FC<GuidelinesPageProps> = ({ selectedGender }) => {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "60vh", opacity: 1 }}
             transition={{ duration: 1, type: "spring", stiffness: 60 }}
-            className="flex flex-col items-center justify-center w-80vw overflow-y-scroll h-[90vh] customScrollBar  bg-white rounded-xl px-8 py-32"
+            className="flex flex-col items-center justify-center w-80vw overflow-y-scroll h-[90vh] customScrollBar  bg-white rounded-xl px-8 py-44"
           >
             <motion.div
               initial={{ opacity: 0 }}
