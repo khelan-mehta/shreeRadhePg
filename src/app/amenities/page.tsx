@@ -71,7 +71,7 @@ const Facilities: React.FC = () => {
 
   const images = [
     "https://telecomtalk.info/wp-content/uploads/2023/09/jiofiber-long-term-plans-come-with-free.png.webp",
-    "https://media.istockphoto.com/id/1083622428/vector/car-parking-icon.jpg?s=612x612&w=0&k=20&c=Z6VydNYDHrBq6gujhSuC6eIaCXQn_eMHNBFf8Co0ul4=", // Replace with actual URLs
+    "https://media.istockphoto.com/id/1083622428/vector/car-parking-icon.jpg?s=612x612&w=0&k=20&c=Z6VydNYDHrBq6gujhSuC6eIaCXQn_eMHNBFf8Co0ul4=", 
     "https://housing.com/news/wp-content/uploads/2022/11/GYM-INTERIORS-FEATURE-compressed.jpg",
     "https://media.istockphoto.com/id/1498878143/photo/book-stack-and-open-book-on-the-desk-in-modern-public-library.webp?b=1&s=170667a&w=0&k=20&c=T63zJBKuZLTUQwwAAwLzbMwtzAEdd4wZRaEV6EAdUnA=",
     "https://3.files.edl.io/1ed0/18/10/24/140236-4602de79-383e-4afb-94f6-678a95125f25.jpg",

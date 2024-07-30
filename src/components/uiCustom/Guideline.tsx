@@ -76,13 +76,13 @@ const GuidelinesPage: React.FC<GuidelinesPageProps> = ({ selectedGender }) => {
           height="60px"
         />
       </div>
-      <div className="flex flex-col h-[90vh] items-center justify-center w-full  py-8">
+      <div className="flex flex-col  items-center justify-center w-full  py-8">
         {showGuidelines && (
           <motion.div
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "60vh", opacity: 1 }}
             transition={{ duration: 1, type: "spring", stiffness: 60 }}
-            className="flex flex-col items-center justify-center w-80vw h-40vh bg-white rounded-xl p-8"
+            className="flex flex-col items-center justify-center w-80vw overflow-y-scroll h-[90vh] customScrollBar  bg-white rounded-xl p-8"
           >
             <motion.div
               initial={{ opacity: 0 }}

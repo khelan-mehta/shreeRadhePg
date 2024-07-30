@@ -34,6 +34,7 @@ import {
 import { sendMail } from "@/lib/mail";
 import GuidelinesPagePhone from "./uiCustom/GuideLinePhone";
 import TabView from "./views/tabView";
+import Footer from "./Footer";
 
 const Rooms = () => {
   const [selectedGender, setSelectedGender] = useState(null);
@@ -612,6 +613,7 @@ const Rooms = () => {
           </div>
         </div>
       </DesktopView>
+      <Footer />
     </div>
   );
 };
