@@ -76,7 +76,7 @@ const GuidelinesPage: React.FC<GuidelinesPageProps> = ({ selectedGender }) => {
           height="60px"
         />
       </div>
-      <div className="flex flex-col  items-center justify-center w-full  py-8">
+      <div className="flex flex-col  items-center justify-center w-full  py-24">
         {showGuidelines && (
           <motion.div
             initial={{ height: 0, opacity: 0 }}
@@ -88,7 +88,7 @@ const GuidelinesPage: React.FC<GuidelinesPageProps> = ({ selectedGender }) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.3 }}
-              className="flex flex-col items-center justify-center rounded-xl p-8"
+              className="flex flex-col items-center justify-center rounded-xl p-8 mt-36"
             >
               <h1 className="text-2xl font-bold mb-4">
                 {selectedGender === "female" ? "Girls" : "Boys"} Guidelines
