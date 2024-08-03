@@ -52,7 +52,7 @@ export default function MobileLocationView() {
       </div>
 
       {/* Footer */}
-      <div className="mt-[20px] z-[10]">
+      <div className="mt-[20px] z-[00]">
         <Footer />
       </div>
     </div>

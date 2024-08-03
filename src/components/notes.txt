@@ -6,7 +6,7 @@ import DesktopView from "@/components/views/desktopView";
 import MobileView from "@/components/views/mobileView";
 import Image from "next/image";
 import { MapPin } from "lucide-react";
-import MapSS from "../../public/mapSS.png";  
+import MapSS from "../../public/mapSS.png";
 export default function DesktopLocationView() {
   const animationContainer = useRef<HTMLDivElement>(null);
 
@@ -25,9 +25,9 @@ export default function DesktopLocationView() {
       {/* Lottie Animation Container */}
       <Image
         src={MapSS}
-        className="mt-[10px] ml-[50px]"
+        className="mt-[-20px]"
         alt="MapSS"
-        width={483}
+        width={603}
         height={434}
       />
       <div className="flex absolute right-10 h-[13vh] mt-[30px]   bg-white justify-center items-center w-[50vw] px-2 rounded-lg border-dashed border-2 border-primary">
@@ -61,4 +61,3 @@ export default function DesktopLocationView() {
       </div>
     </div>
   );
-}

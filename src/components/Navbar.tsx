@@ -94,7 +94,7 @@ const Navbar = () => {
                 href={link.href}
                 text={link.text}
                 onClick={() => handleLinkClick(link.href.split("#")[1])}
-              /> 
+              />
             ))}
           </div>
           <div className="md:hidden">
@@ -108,13 +108,13 @@ const Navbar = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="flex flex-col items-center gap-12 absolute top-24 left-0 text-[40px] font-semibold w-screen z-[1] p-12 bg-[#ECEAE5]/70 mt-2 h-screen text-pretty italic"
+            className="flex flex-col items-center opacity-100 gap-12 absolute top-24 left-0 text-[40px] font-semibold w-screen z-[1] p-12 bg-[#ECEAE5]/70 mt-2 h-screen text-pretty italic"
           >
             <motion.div
               variants={staggerContainer}
               initial="hidden"
               animate="show"
-              className="flex flex-col h-[90vh] overflow-hidden items-center gap-12"
+              className="flex bg-opacity-100 flex-col h-[90vh] overflow-hidden items-center gap-12"
             >
               {currentLinks.map((item, index) => {
                 const Icon = iconMap[item.icon];
@@ -122,12 +122,12 @@ const Navbar = () => {
                   <motion.div
                     key={index}
                     variants={staggerItem}
-                    className="self-center flex justify-between w-full items-center gap-2"
+                    className="self-center bg-opacity-100 flex justify-between w-full items-center gap-2"
                   >
                     {item.text === "Contact" ? (
                       <Link
                         href={item.href}
-                        className="flex items-center gap-2"
+                        className="flex bg-opacity-100 items-center gap-2"
                       >
                         <Icon size={40} /> {item.text}
                       </Link>
