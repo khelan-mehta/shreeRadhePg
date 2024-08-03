@@ -23,7 +23,7 @@ export default function MobileLocationView() {
   return (
     <div className="flex flex-col overflow-y-hidden">
       {/* Lottie Animation Container */}
-      <Image src={MapSS} className="mt-[-20px]" alt="MapSS" width={600} height={500}/>
+      <Image src={MapSS} className="mt-[20px]" alt="MapSS" width={600} height={500}/>
       <div className="flex flex-col">
         <div className="flex mt-[20px] h-[13vh] self-center   bg-white justify-center items-center w-[90vw] px-2 rounded-lg border-dashed border-2 border-primary">
           <div className="flex w-[15%] self-center justify-center items-center">

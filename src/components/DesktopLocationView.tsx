@@ -6,7 +6,7 @@ import DesktopView from "@/components/views/desktopView";
 import MobileView from "@/components/views/mobileView";
 import Image from "next/image";
 import { MapPin } from "lucide-react";
-import MapSS from "../../public/mapSS.png";  
+import MapSS from "../../public/mapSS.png";
 export default function DesktopLocationView() {
   const animationContainer = useRef<HTMLDivElement>(null);
 
