@@ -1,17 +1,25 @@
-import Footer from "@/components/Footer";
+"use client";
+import DesktopLocationView from "@/components/DesktopLocationView";
+import MobileLocationView from "@/components/MobileLocationView";
+import DesktopView from "@/components/views/desktopView";
+import MobileView from "@/components/views/mobileView";
+import TabView from "@/components/views/tabView";
 import React from "react";
 
-const page = () => {
+const Page = () => {
   return (
-    <div className="flex flex-col">
-      <div className="flex text-[32px] w-screen justify-center items-center h-[30vh]">
-        Location Page will come here
-      </div>
-      <div className="flex absolute bottom-0">
-        <Footer />
-      </div>
+    <div>
+      <MobileView>
+        <MobileLocationView />
+      </MobileView>
+      <TabView>
+        <MobileLocationView />
+      </TabView>
+      <DesktopView>
+        <DesktopLocationView />
+      </DesktopView>
     </div>
   );
 };
 
-export default page;
+export default Page;
